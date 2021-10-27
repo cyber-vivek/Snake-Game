@@ -26,8 +26,8 @@
 }
 #dscore{
     position: absolute;
-    top: 9px;
-    right: 200px;
+    top: 40px;
+    left: 970px;
     font-size: 52px;
     font-weight: bold;
     /* text-transform: uppercase; */
@@ -55,4 +55,11 @@ img{
     background:linear-gradient(red,rgb(218, 160, 35));
     border: 1px solid ;
     border-radius: 10px;
+}
+#highscore{
+    position: absolute;
+    top: 120px;
+    left: 970px;
+    font-size: 52px;
+    font-weight: bold;
 }

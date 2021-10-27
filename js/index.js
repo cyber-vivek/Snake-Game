@@ -8,7 +8,16 @@ let speed = 6;
 let score = 0;
 let snakearr = [{x:1,y:11}];
 let food ={x:17,y:17};
+let dscore = document.getElementById("dscore")
+let hscore =document.getElementById("highscore")
 
+console.log(localStorage.getItem("highscore"))
+if(window.localStorage.getItem("highscore")==null){
+    localStorage.setItem("highscore",0)
+}
+else{
+    hscore.innerHTML = "High Score: "+localStorage.getItem("highscore")
+}
 
 // window.requestAnimationFrame requsts to execute the function and next function is executd when current is done.
 function main(ctime){
@@ -55,6 +64,9 @@ function gameover(){
 function gameengine(){
     // ==> Checking for game over
     if(gameover()){
+        if(score>parseInt(localStorage.getItem("highscore"))){
+            localStorage.setItem("highscore",score);
+            hscore.innerHTML = "High Score: "+ score}
         score = 0;
         gover.play();
         bgmusic.pause();
