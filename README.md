@@ -5,4 +5,4 @@
 - Added the feature to save high score using window local storage property.
 - 
 # Live Project Link
-https://snake-xenzia-game.netlify.app
+https://cyber-vivek.github.io/Snake-Game.github.io/
